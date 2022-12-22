@@ -8,7 +8,8 @@ import Recipies from "./Components/Recipies";
 import Layout from "./Pages/Layout";
 
 function App() {
-  <BrowserRouter>
+  return(
+    <BrowserRouter>
     <Routes>
       <Route path="/" element={<Layout/>}>
         <Route index element={<Home/>}/>
@@ -17,7 +18,9 @@ function App() {
         <Route path="about" element={<About/>}/>
       </Route>
     </Routes>
-  </BrowserRouter>;
+  </BrowserRouter>
+  );
+ 
 }
 
 export default App;

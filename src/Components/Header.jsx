@@ -1,10 +1,15 @@
 import React from 'react';
-
+import Navbar from './Navbar';
+import "../Styles/Header.css"
+import { Link } from 'react-router-dom';
 const Header = () => {
     return (
-        <div>
-            header
-        </div>
+       <header>
+        <Link to="/">
+            TasteIt
+        </Link>
+        <Navbar></Navbar>
+       </header>
     );
 };
 
