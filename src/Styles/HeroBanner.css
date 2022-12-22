@@ -1,0 +1,28 @@
+.Banner-wrapper {
+  position: relative;
+}
+.Banner-video {
+  width: 100vw;
+  height: 55vh;
+  top: 0;
+  object-fit: cover;
+}
+
+.Banner-header h1,
+p {
+  font-size: 2em;
+  color: #ffff;
+}
+
+.Banner-header {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+.Banner-button {
+  text-decoration: none;
+  border: 2px #ffff solid;
+  border-radius: 8px;
+  padding: 5px;
+  color: #ffff;
+}
