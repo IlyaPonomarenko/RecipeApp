@@ -1,5 +1,6 @@
 import React from "react";
 import HeroBanner from "./HeroBanner";
+import "../Styles/Home.css"
 import { Link } from "react-router-dom";
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
         <h2>Looking for new recipies?</h2>
       </div>
       <div className="Home-cards-wrapper">
+        
         <div className="Home-card">
           <h2>Browse recipes</h2>
           <p>
@@ -31,7 +33,7 @@ const Home = () => {
           <p>
             Visit our programme homepage
           </p>
-          <a href="https://en.bc.fi" target="_blanj noreferer"></a>
+          <a href="https://en.bc.fi/qualifications/full-stack-web-developer-program/" target="_blank noreferer">Business College Helsinki Homepage</a>
         </div>
       </div>
     </div>

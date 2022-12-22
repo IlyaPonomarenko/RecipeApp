@@ -7,7 +7,7 @@ const HeroBanner = () => {
     <div className="Banner-wrapper">
       <div className="Banner-header">
         <h1>TasteIT</h1>
-        <p>TasteIT is a recipe app which is made in REACT22S group lessons.</p>
+        <p className="Banner-p">TasteIT is a recipe app which is made in REACT22S group lessons.</p>
         <div>
           <Link className="Banner-button" to="allrecipies">
             Check out all recipies
@@ -15,7 +15,7 @@ const HeroBanner = () => {
         </div>
       </div>
       <video autoPlay="autoplay" muted={true} loop={true} className="Banner-video">
-        <source src={require("../Assets/video.mp4")} type="video/mp4" />
+        <source src={require("../Assets/video2.mp4")} type="video/mp4" />
       </video>
     </div>
   );

@@ -1,28 +1,32 @@
-.Banner-wrapper {
-  position: relative;
-}
 .Banner-video {
   width: 100vw;
-  height: 55vh;
-  top: 0;
+  height: 47vh;
   object-fit: cover;
 }
 
-.Banner-header h1,
-p {
-  font-size: 2em;
+.Banner-header h1 {
+  font-size: 51px;
   color: #ffff;
+  margin: 0;
 }
-
+.Banner-p {
+  color: #ffff;
+  font-size: 23px;
+  margin-bottom: 37px;
+}
 .Banner-header {
   position: absolute;
-  top: 30%;
-  left: 20%;
+  top: 21%;
+  left: 21%;
 }
 .Banner-button {
   text-decoration: none;
-  border: 2px #ffff solid;
+  border: 2px #76f9ff solid;
   border-radius: 8px;
   padding: 5px;
-  color: #ffff;
+  color: #76f9ff;
+}
+.Banner-button:hover {
+  text-shadow: 0 0 35px #76f9ff;
+  transition: all 0.5s ease-in-out;
 }
