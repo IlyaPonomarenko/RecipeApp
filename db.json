@@ -1,0 +1,86 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Chicken Parmesan",
+      "author": "Maria Valentina",
+      "country": "Italy",
+      "description": "A classic Italian dish of breaded chicken topped with tomato sauce and melted mozzarella cheese.",
+      "image": "https://assets.bonappetit.com/photos/5ea8f0df16738800085ad5d2/1:1/w_2560%2Cc_limit/Chicken-Parmesean-Recipe-Lede.jpg",
+      "ingredients": [
+        { "name": "chicken breasts", "quantity": 2 },
+        { "name": "flour", "quantity": 0.5 },
+        { "name": "eggs", "quantity": 2 },
+        { "name": "bread crumbs", "quantity": 1 },
+        { "name": "tomato sauce", "quantity": 1 },
+        { "name": "mozzarella cheese", "quantity": 1 }
+      ],
+      "servings": 4,
+      "directions": [
+        "Preheat the oven to 400 degrees F.",
+        "Cut the chicken breasts in half lengthwise to create thin cutlets.",
+        "In a shallow dish, combine the flour and some salt and pepper.",
+        "In a separate shallow dish, beat the eggs.",
+        "In a third shallow dish, mix the bread crumbs with some grated Parmesan cheese.",
+        "Dredge each chicken cutlet in the flour mixture, then dip it in the egg mixture, and then coat it with the bread crumb mixture, pressing gently to help the bread crumbs adhere.",
+        "Heat some oil in a large oven-safe skillet over medium-high heat. Add the chicken cutlets and cook until they are golden brown on both sides, about 2 minutes per side.",
+        "Pour the tomato sauce over the chicken and sprinkle with the mozzarella cheese. Transfer the skillet to the oven and bake until the cheese is melted and bubbly, about 10 minutes.",
+        "Serve the chicken Parmesan with a side of pasta or a salad."
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Pad Thai",
+      "author": "Malee Saelim",
+      "country": "Thailand",
+      "description": "A popular Thai street food dish made with stir-fried rice noodles, eggs, and a variety of vegetables and seasonings.",
+      "image": "https://www.feastingathome.com/wp-content/uploads/2016/04/pad-thai-2.jpg",
+      "ingredients": [
+        { "name": "rice noodles", "quantity": 8 },
+        { "name": "eggs", "quantity": 2 },
+        { "name": "bean sprouts", "quantity": 1 },
+        { "name": "green onions", "quantity": 0.5 },
+        { "name": "ground peanuts", "quantity": 0.25 },
+        { "name": "lime", "quantity": 4 },
+        { "name": "fish sauce", "quantity": 2 },
+        { "name": "brown sugar", "quantity": 1 },
+        { "name": "red pepper flakes", "quantity": 1 }
+      ],
+      "servings": 2,
+      "directions": [
+        "Soak the rice noodles in warm water for 30 minutes, then drain and set aside.",
+        "In a large wok or skillet, heat some oil over medium-high heat. Add the eggs and scramble until cooked, then transfer to a plate and set aside.",
+        "Add more oil to the wok or skillet and heat until hot. Add the drained rice noodles, bean sprouts, green onions, ground peanuts, and lime wedges. Stir-fry until the noodles are softened and heated through, about 5 minutes.",
+        "Add the scrambled eggs, fish sauce, brown sugar, and red pepper flakes. Stir-fry until the ingredients are well combined and the noodles are coated with the sauce, about 2 minutes.",
+        "Serve the pad Thai hot, garnished with additional ground peanuts and lime wedges, if desired."
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Pad Thai2",
+      "author": "Malee Saelim",
+      "country": "Thailand",
+      "description": "A popular Thai street food dish made with stir-fried rice noodles, eggs, and a variety of vegetables and seasonings.",
+      "image": "https://www.feastingathome.com/wp-content/uploads/2016/04/pad-thai-2.jpg",
+      "ingredients": [
+        { "name": "rice noodles", "quantity": 8 },
+        { "name": "eggs", "quantity": 2 },
+        { "name": "bean sprouts", "quantity": 1 },
+        { "name": "green onions", "quantity": 0.5 },
+        { "name": "ground peanuts", "quantity": 0.25 },
+        { "name": "lime", "quantity": 4 },
+        { "name": "fish sauce", "quantity": 2 },
+        { "name": "brown sugar", "quantity": 1 },
+        { "name": "red pepper flakes", "quantity": 1 }
+      ],
+      "servings": 2,
+      "directions": [
+        "Soak the rice noodles in warm water for 30 minutes, then drain and set aside.",
+        "In a large wok or skillet, heat some oil over medium-high heat. Add the eggs and scramble until cooked, then transfer to a plate and set aside.",
+        "Add more oil to the wok or skillet and heat until hot. Add the drained rice noodles, bean sprouts, green onions, ground peanuts, and lime wedges. Stir-fry until the noodles are softened and heated through, about 5 minutes.",
+        "Add the scrambled eggs, fish sauce, brown sugar, and red pepper flakes. Stir-fry until the ingredients are well combined and the noodles are coated with the sauce, about 2 minutes.",
+        "Serve the pad Thai hot, garnished with additional ground peanuts and lime wedges, if desired."
+      ]
+    }
+  ]
+}
