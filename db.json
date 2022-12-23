@@ -9,14 +9,13 @@
       "description": "A classic Italian dish of breaded chicken topped with tomato sauce and melted mozzarella cheese.",
       "image": "https://assets.bonappetit.com/photos/5ea8f0df16738800085ad5d2/1:1/w_2560%2Cc_limit/Chicken-Parmesean-Recipe-Lede.jpg",
       "ingredients": [
-        { "name": "chicken breasts", "quantity": 2 },
-        { "name": "flour", "quantity": 0.5 },
-        { "name": "eggs", "quantity": 2 },
-        { "name": "bread crumbs", "quantity": 1 },
-        { "name": "tomato sauce", "quantity": 1 },
-        { "name": "mozzarella cheese", "quantity": 1 }
+        { "ingredient": "chicken breasts", "quantity": 2 },
+        { "ingredient": "flour", "quantity": 0.5 },
+        { "ingredient": "eggs", "quantity": 2 },
+        { "ingredient": "bread crumbs", "quantity": 1 },
+        { "ingredient": "tomato sauce", "quantity": 1 },
+        { "ingredient": "mozzarella cheese", "quantity": 1 }
       ],
-      "servings": 4,
       "directions": [
         "Preheat the oven to 400 degrees F.",
         "Cut the chicken breasts in half lengthwise to create thin cutlets.",
@@ -38,17 +37,16 @@
       "description": "A popular Thai street food dish made with stir-fried rice noodles, eggs, and a variety of vegetables and seasonings.",
       "image": "https://www.feastingathome.com/wp-content/uploads/2016/04/pad-thai-2.jpg",
       "ingredients": [
-        { "name": "rice noodles", "quantity": 8 },
-        { "name": "eggs", "quantity": 2 },
-        { "name": "bean sprouts", "quantity": 1 },
-        { "name": "green onions", "quantity": 0.5 },
-        { "name": "ground peanuts", "quantity": 0.25 },
-        { "name": "lime", "quantity": 4 },
-        { "name": "fish sauce", "quantity": 2 },
-        { "name": "brown sugar", "quantity": 1 },
-        { "name": "red pepper flakes", "quantity": 1 }
+        { "ingredient": "rice noodles", "quantity": 8 },
+        { "ingredient": "eggs", "quantity": 2 },
+        { "ingredient": "bean sprouts", "quantity": 1 },
+        { "ingredient": "green onions", "quantity": 0.5 },
+        { "ingredient": "ground peanuts", "quantity": 0.25 },
+        { "ingredient": "lime", "quantity": 4 },
+        { "ingredient": "fish sauce", "quantity": 2 },
+        { "ingredient": "brown sugar", "quantity": 1 },
+        { "ingredient": "red pepper flakes", "quantity": 1 }
       ],
-      "servings": 2,
       "directions": [
         "Soak the rice noodles in warm water for 30 minutes, then drain and set aside.",
         "In a large wok or skillet, heat some oil over medium-high heat. Add the eggs and scramble until cooked, then transfer to a plate and set aside.",
@@ -66,17 +64,16 @@
       "description": "A popular Thai street food dish made with stir-fried rice noodles, eggs, and a variety of vegetables and seasonings.",
       "image": "https://www.feastingathome.com/wp-content/uploads/2016/04/pad-thai-2.jpg",
       "ingredients": [
-        { "name": "rice noodles", "quantity": 8 },
-        { "name": "eggs", "quantity": 2 },
-        { "name": "bean sprouts", "quantity": 1 },
-        { "name": "green onions", "quantity": 0.5 },
-        { "name": "ground peanuts", "quantity": 0.25 },
-        { "name": "lime", "quantity": 4 },
-        { "name": "fish sauce", "quantity": 2 },
-        { "name": "brown sugar", "quantity": 1 },
-        { "name": "red pepper flakes", "quantity": 1 }
+        { "ingredient": "rice noodles", "quantity": 8 },
+        { "ingredient": "eggs", "quantity": 2 },
+        { "ingredient": "bean sprouts", "quantity": 1 },
+        { "ingredient": "green onions", "quantity": 0.5 },
+        { "ingredient": "ground peanuts", "quantity": 0.25 },
+        { "ingredient": "lime", "quantity": 4 },
+        { "ingredient": "fish sauce", "quantity": 2 },
+        { "ingredient": "brown sugar", "quantity": 1 },
+        { "ingredient": "red pepper flakes", "quantity": 1 }
       ],
-      "servings": 2,
       "directions": [
         "Soak the rice noodles in warm water for 30 minutes, then drain and set aside.",
         "In a large wok or skillet, heat some oil over medium-high heat. Add the eggs and scramble until cooked, then transfer to a plate and set aside.",
