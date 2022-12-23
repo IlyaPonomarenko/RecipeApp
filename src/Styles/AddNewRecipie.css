@@ -3,9 +3,17 @@
   padding: 4rem 0;
   width: 50%;
 }
+.h2-new-recipe {
+  text-align: center;
+}
 .form-input-title {
   display: flex;
   flex-direction: column;
+}
+.form-input-title input,
+select,
+textarea {
+  margin-top: 5px;
 }
 form {
   padding: 1rem;
@@ -13,3 +21,36 @@ form {
   flex-direction: column;
   gap: 2rem;
 }
+.ingredients-field {
+  display: inline-flex;
+  padding: 1em 0 1em 0;
+}
+.ingredients-field .form-input-title {
+  display: inline;
+  justify-content: space-between;
+}
+.addIngredients-btn {
+  border: 2px #01888f solid;
+  border-radius: 8px;
+  padding: 5px;
+  color: #01888f;
+  background: none;
+  width: 23%;
+}
+.addIngredients-btn:hover {
+  text-shadow: 0 0 35px #76f9ff;
+  transition: all 0.5s ease-in-out;
+}
+.post-btn{
+  border: 2px #01888f solid;
+  border-radius: 8px;
+  padding: 5px;
+  color: #FFFFFf;
+  background: #01888f;;
+  width: 23%;
+}
+
+.post-btn:hover {
+    text-shadow: 0 0 35px #76f9ff;
+    transition: all 0.5s ease-in-out;
+  }

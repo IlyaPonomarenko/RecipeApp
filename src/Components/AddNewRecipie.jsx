@@ -45,7 +45,7 @@ const AddNewRecipie = () => {
   };
   return (
     <div className="new-recipe-wrapper">
-      <h2>Add a new recipe</h2>
+      <h2 className="h2-new-recipe">Add a new recipe</h2>
       <form>
         <label className="form-input-title">
           {" "}
@@ -96,7 +96,7 @@ const AddNewRecipie = () => {
         </label>
 
         <label className="form-input-title">
-          Image
+          Image:
           <input
             required
             type="url"
@@ -106,13 +106,13 @@ const AddNewRecipie = () => {
           />
         </label>
         <label className="form-input-title">
-          Ingredients
+          Ingredients:
           {addedIngredients.map((ingredient, index) => {
             return (
               <div className="ingredients-field" key={index}>
-                <div>
+                <div className="one-input">
                   <label className="form-input-title">
-                    Ingredient
+                    Ingredient:
                     <input
                       type="text"
                       name="ingredient"
@@ -121,9 +121,9 @@ const AddNewRecipie = () => {
                     />
                   </label>
                 </div>
-                <div>
+                <div className="one-input">
                   <label className="form-input-title">
-                    Quantity
+                    Quantity:
                     <input
                       type="text"
                       name="quantity"
@@ -149,7 +149,7 @@ const AddNewRecipie = () => {
           ></textarea>
         </label>
         <button className="post-btn" type="submit" id="submit">
-          Post recipe
+          Post recipe 
         </button>
       </form>
     </div>
