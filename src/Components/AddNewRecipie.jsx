@@ -43,6 +43,11 @@ const AddNewRecipie = () => {
     };
     setAddedIngredients([...addedIngredients, newField]);
   };
+  const postHandler = (e) =>{
+    e.preventDefault()
+    axios.post("https://localhost:3000/recipies", recipeData);
+    console.log("recipe added");
+  }
   return (
     <div className="new-recipe-wrapper">
       <h2 className="h2-new-recipe">Add a new recipe</h2>
@@ -148,7 +153,7 @@ const AddNewRecipie = () => {
             onChange={inputDataHandler}
           ></textarea>
         </label>
-        <button className="post-btn" type="submit" id="submit">
+        <button className="post-btn" type="submit" id="submit" onClick={postHandler}>
           Post recipe 
         </button>
       </form>
