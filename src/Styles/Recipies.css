@@ -1,0 +1,19 @@
+.recipies-search {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 3em;
+}
+.recipies-search label {
+  display: flex;
+  flex-direction: column;
+}
+
+.recipies-collection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 27px;
+  margin: 50px auto;
+}

@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import Card from "./Card";
 import axios from "axios";
+import "../Styles/Recipies.css"
 
 const Recipies = () => {
   const [recipiesData, setRecipiesData] = useState([]);
@@ -23,6 +24,7 @@ const Recipies = () => {
             {recipiesData.map((recipe) =>{
                 return(
                     <Card
+                    key={recipe.id}
                     id={recipe.id}
                     name={recipe.name}
                     flag={recipe.flag}

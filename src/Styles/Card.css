@@ -1,0 +1,20 @@
+.recipe-card{
+    max-width: 379px;
+    border-radius: 11px;
+    padding: 23px;
+    border: 1px #393e46 solid;
+}
+.recipie-img-wrapper{
+    width: 50%;
+}
+.recipe-img{
+    width: 200%;
+    border-radius: 20px;
+}
+.recipie-flag-wrapper{
+    border-radius: 20px;
+}
+.recipe-flag{
+    width: 15%;
+    height: 15%;
+}
