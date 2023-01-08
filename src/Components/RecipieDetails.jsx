@@ -1,29 +1,33 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import axios from "axios";
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect} from "react";
 
 const RecipieDetails = () => {
+  const {id} = useParams()
   const [recipeDetails, setRecipieDetails] = useState();
-  const params = useParams();
 
   useEffect(() => {
-    axios.get(`http://localhost:3000/recipes/${params.recipiesingle}`).then((res) => {
-      setRecipieDetails(res.data);
-    });
+    axios
+      .get(`http://localhost:3000/recipes/${id}`)
+      .then((res) => {
+        setRecipieDetails(res.data);
+      });
+      
   }, []);
 
   return (
-    <div className="details-wrapper">
-      <div className="details-name">
-        <h2>{recipeDetails.name}</h2>
-      </div>
-      <div className="details-info">
-        <div className="details-image">
-          <img src={recipeDetails.image} alt={recipeDetails.name} />
-        </div>
-      </div>
+    // <div className="details-wrapper">
+    //   <div className="details-name">
+    //     <h2>{recipeDetails.name}</h2>
+    //   </div>
+    //   <div className="details-info">
+    //     <div className="details-image">
+    //       <img src={recipeDetails.image} alt={recipeDetails.name} />
+    //     </div>
+    //   </div>
+    // </div>
+    <div>
     </div>
   );
 };

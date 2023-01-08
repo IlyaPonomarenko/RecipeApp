@@ -15,7 +15,7 @@ function App() {
       <Route path="/" element={<Layout/>}>
         <Route index element={<Home/>}/>
         <Route path="allrecipies" element={<Recipies/>}/>
-        <Route path="allrecipies/:recipiesingle" element={<RecipieDetails/>}/>
+        <Route path="allrecipies/:id" element={<RecipieDetails/>}/>
         <Route path="addnewrecipe" element={<AddNewRecipie/>}/>
         <Route path="about" element={<About/>}/>
         
