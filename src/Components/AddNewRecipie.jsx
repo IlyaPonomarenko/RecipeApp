@@ -54,7 +54,6 @@ const AddNewRecipie = () => {
       quantity: "",
     };
     setAddedIngredients([...addedIngredients, newField]);
-    console.log(countriesData);
   };
   const newIngredientsInputHandler = (e, index) => {
     let data = [...addedIngredients];
@@ -64,7 +63,6 @@ const AddNewRecipie = () => {
   };
   const postHandler = (e) => {
     e.preventDefault();
-    console.log(recipeData);
     axios
       .post("http://localhost:3000/recipes", {
         name: recipeData.name,
@@ -76,7 +74,6 @@ const AddNewRecipie = () => {
         ingredients: recipeData.ingredients,
         directions: recipeData.directions,
       })
-      .then(e.target.reset())
       .catch((error) => console.log(error));
   };
 

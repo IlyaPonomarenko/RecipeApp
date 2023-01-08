@@ -233,6 +233,22 @@
       ],
       "directions": "da",
       "id": 8
+    },
+    {
+      "name": "Test recipe",
+      "author": "Ilya Ponomarenko",
+      "country": "Micronesia",
+      "flag": "https://flagcdn.com/fm.svg",
+      "description": "dsadas",
+      "image": "https://images.unsplash.com/photo-1673181914844-d255f8d4eb8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+      "ingredients": [
+        {
+          "ingredient": "dsa",
+          "quantity": "dsa"
+        }
+      ],
+      "directions": "dsadas",
+      "id": 9
     }
   ]
 }
