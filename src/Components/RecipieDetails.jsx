@@ -5,7 +5,7 @@ import { useState, useEffect} from "react";
 
 const RecipieDetails = () => {
   const {id} = useParams()
-  const [recipeDetails, setRecipieDetails] = useState();
+  const [recipeDetails, setRecipieDetails] = useState([]);
 
   useEffect(() => {
     axios
@@ -17,17 +17,15 @@ const RecipieDetails = () => {
   }, []);
 
   return (
-    // <div className="details-wrapper">
-    //   <div className="details-name">
-    //     <h2>{recipeDetails.name}</h2>
-    //   </div>
-    //   <div className="details-info">
-    //     <div className="details-image">
-    //       <img src={recipeDetails.image} alt={recipeDetails.name} />
-    //     </div>
-    //   </div>
-    // </div>
-    <div>
+    <div className="details-wrapper">
+      <div className="details-name">
+        <h2>{recipeDetails.name}</h2>
+      </div>
+      <div className="details-info">
+        <div className="details-image">
+          <img src={recipeDetails.image} alt={recipeDetails.name} />
+        </div>
+      </div>
     </div>
   );
 };
