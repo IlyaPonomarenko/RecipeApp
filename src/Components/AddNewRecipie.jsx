@@ -1,14 +1,14 @@
 import React from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
-import "../Styles/AddNewRecipie.css"
+import "../Styles/AddNewRecipie.css";
 const AddNewRecipie = () => {
   const [recipeData, setRecipeData] = useState({
     name: "",
     author: "",
     country: "",
     description: "",
-    flag:"",
+    flag: "",
     image: "",
     ingredients: {},
     directions: "",
@@ -20,10 +20,6 @@ const AddNewRecipie = () => {
 
   useEffect(() => {
     axios.get("https://restcountries.com/v3.1/all").then((res) => {
-      let countryData = [];
-      res.data.map((country) =>{
-        
-      })
       setCountries(res.data);
     });
   }, []);
@@ -31,23 +27,25 @@ const AddNewRecipie = () => {
   let countryNames = [];
   countryNames.push(
     countriesData.map((country) => {
-      return ({
-        name: country.name.common,
-        value:country.name.common,
-        flag: country.flags.png
-      });
+      return country.name.common;
     })
   );
 
   const inputDataHandler = (e) => {
     setRecipeData({ ...recipeData, [e.target.name]: e.target.value });
   };
-  const countryPickHandler = (pickedCountry) =>{
-    setRecipeData({...recipeData,
-      country: pickedCountry.value,
-      flag: pickedCountry.flag
-    })
-  }
+
+  const countryPickHandler = (e) => {
+    axios
+      .get(`https://restcountries.com/v3.1/name/${e.target.value}`)
+      .then((res) => {
+        setRecipeData({
+          ...recipeData,
+          flag: res.data[0].flags?.svg,
+          country: res.data[0].name.common,
+        });
+      });
+  };
 
   const newIngredientsField = (e) => {
     e.preventDefault();
@@ -56,32 +54,36 @@ const AddNewRecipie = () => {
       quantity: "",
     };
     setAddedIngredients([...addedIngredients, newField]);
+    console.log(countriesData);
   };
-  const newIngredientsInputHandler = (e, index) =>{
+  const newIngredientsInputHandler = (e, index) => {
     let data = [...addedIngredients];
     data[index][e.target.name] = e.target.value;
     setAddedIngredients(data);
-    setRecipeData({...recipeData, ingredients: addedIngredients})
-  }
-  const postHandler = (e) =>{
-    e.preventDefault()
+    setRecipeData({ ...recipeData, ingredients: addedIngredients });
+  };
+  const postHandler = (e) => {
+    e.preventDefault();
     console.log(recipeData);
-    axios.post("http://localhost:3000/recipes", {
-      name: recipeData.name,
-      author: recipeData.author,
-      country: recipeData.country,
-      flag: recipeData.flag,
-      description: recipeData.description,
-      image: recipeData.image,
-      ingredients: recipeData.ingredients,
-      directions: recipeData.directions
-    })
-    .catch((error) => console.log(error))
-  }
+    axios
+      .post("http://localhost:3000/recipes", {
+        name: recipeData.name,
+        author: recipeData.author,
+        country: recipeData.country,
+        flag: recipeData.flag,
+        description: recipeData.description,
+        image: recipeData.image,
+        ingredients: recipeData.ingredients,
+        directions: recipeData.directions,
+      })
+      .then(e.target.reset())
+      .catch((error) => console.log(error));
+  };
+
   return (
     <div className="new-recipe-wrapper">
       <h2 className="h2-new-recipe">Add a new recipe</h2>
-      <form>
+      <form >
         <label className="form-input-title">
           {" "}
           Name:
@@ -109,11 +111,12 @@ const AddNewRecipie = () => {
         <label className="form-input-title">
           {" "}
           Recipe is from:
-          <select 
-          required 
-          name="country" 
-          id="country"
-          onChange={countryPickHandler}>
+          <select
+            required
+            name="country"
+            id="country"
+            onChange={countryPickHandler}
+          >
             {countryNames[0].map((country) => {
               return (
                 <option value={country} key={country}>
@@ -187,8 +190,13 @@ const AddNewRecipie = () => {
             onChange={inputDataHandler}
           ></textarea>
         </label>
-        <button className="post-btn" type="submit" id="submit" onClick={postHandler}>
-          Post recipe 
+        <button
+          className="post-btn"
+          type="submit"
+          id="submit"
+          onClick={postHandler}
+        >
+          Post recipe
         </button>
       </form>
     </div>
