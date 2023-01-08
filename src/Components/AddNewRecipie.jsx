@@ -4,12 +4,11 @@ import { useState, useEffect } from "react";
 import "../Styles/AddNewRecipie.css"
 const AddNewRecipie = () => {
   const [recipeData, setRecipeData] = useState({
-    id: "",
     name: "",
     author: "",
     country: "",
-    flag: "",
     description: "",
+    flag:"",
     image: "",
     ingredients: {},
     directions: "",
@@ -21,6 +20,10 @@ const AddNewRecipie = () => {
 
   useEffect(() => {
     axios.get("https://restcountries.com/v3.1/all").then((res) => {
+      let countryData = [];
+      res.data.map((country) =>{
+        
+      })
       setCountries(res.data);
     });
   }, []);
@@ -28,13 +31,24 @@ const AddNewRecipie = () => {
   let countryNames = [];
   countryNames.push(
     countriesData.map((country) => {
-      return country.name.common;
+      return ({
+        name: country.name.common,
+        value:country.name.common,
+        flag: country.flags.png
+      });
     })
   );
 
   const inputDataHandler = (e) => {
     setRecipeData({ ...recipeData, [e.target.name]: e.target.value });
   };
+  const countryPickHandler = (pickedCountry) =>{
+    setRecipeData({...recipeData,
+      country: pickedCountry.value,
+      flag: pickedCountry.flag
+    })
+  }
+
   const newIngredientsField = (e) => {
     e.preventDefault();
     let newField = {
@@ -43,10 +57,26 @@ const AddNewRecipie = () => {
     };
     setAddedIngredients([...addedIngredients, newField]);
   };
+  const newIngredientsInputHandler = (e, index) =>{
+    let data = [...addedIngredients];
+    data[index][e.target.name] = e.target.value;
+    setAddedIngredients(data);
+    setRecipeData({...recipeData, ingredients: addedIngredients})
+  }
   const postHandler = (e) =>{
     e.preventDefault()
-    axios.post("https://localhost:3000/recipies", recipeData);
-    console.log("recipe added");
+    console.log(recipeData);
+    axios.post("http://localhost:3000/recipes", {
+      name: recipeData.name,
+      author: recipeData.author,
+      country: recipeData.country,
+      flag: recipeData.flag,
+      description: recipeData.description,
+      image: recipeData.image,
+      ingredients: recipeData.ingredients,
+      directions: recipeData.directions
+    })
+    .catch((error) => console.log(error))
   }
   return (
     <div className="new-recipe-wrapper">
@@ -79,7 +109,11 @@ const AddNewRecipie = () => {
         <label className="form-input-title">
           {" "}
           Recipe is from:
-          <select required name="country" id="country">
+          <select 
+          required 
+          name="country" 
+          id="country"
+          onChange={countryPickHandler}>
             {countryNames[0].map((country) => {
               return (
                 <option value={country} key={country}>
@@ -122,7 +156,7 @@ const AddNewRecipie = () => {
                       type="text"
                       name="ingredient"
                       id="ingredient"
-                      onChange={(e) => inputDataHandler(e, index)}
+                      onChange={(e) => newIngredientsInputHandler(e, index)}
                     />
                   </label>
                 </div>
@@ -133,7 +167,7 @@ const AddNewRecipie = () => {
                       type="text"
                       name="quantity"
                       id="quantity"
-                      onChange={(e) => inputDataHandler(e, index)}
+                      onChange={(e) => newIngredientsInputHandler(e, index)}
                     />
                   </label>
                 </div>
