@@ -139,100 +139,32 @@
       ]
     },
     {
-      "name": "Test recipe",
+      "name": "A salad",
       "author": "Ilya Ponomarenko",
-      "country": "Mongolia",
-      "flag": "https://flagcdn.com/mn.svg",
-      "description": "dsad",
-      "image": "https://images.unsplash.com/photo-1673181914844-d255f8d4eb8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+      "country": "Norway",
+      "flag": "https://flagcdn.com/no.svg",
+      "description": "A good and healthy salad. Easy to make!",
+      "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
       "ingredients": [
         {
-          "ingredient": "dasd",
-          "quantity": "dasda"
+          "ingredient": "Pepper",
+          "quantity": "3"
+        },
+        {
+          "ingredient": "Eggs",
+          "quantity": "5"
+        },
+        {
+          "ingredient": "Chicken ",
+          "quantity": "500 g"
+        },
+        {
+          "ingredient": "Tomatoes",
+          "quantity": "5"
         }
       ],
-      "directions": "dasdasd",
+      "directions": "Chop everything nicely and mix into a bowl with some olive oil",
       "id": 4
-    },
-    {
-      "name": "Test recipe",
-      "author": "Ilya Ponomarenko",
-      "country": "Fiji",
-      "flag": "https://flagcdn.com/fj.svg",
-      "description": "dad",
-      "image": "https://images.unsplash.com/photo-1673181914844-d255f8d4eb8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80d",
-      "ingredients": [
-        {
-          "ingredient": "sad",
-          "quantity": "dad"
-        }
-      ],
-      "directions": "dasda",
-      "id": 5
-    },
-    {
-      "name": "Test recipe",
-      "author": "Ilya Ponomarenko",
-      "country": "Fiji",
-      "flag": "https://flagcdn.com/fj.svg",
-      "description": "dad",
-      "image": "https://images.unsplash.com/photo-1673181914844-d255f8d4eb8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80d",
-      "ingredients": [
-        {
-          "ingredient": "sad",
-          "quantity": "dad"
-        }
-      ],
-      "directions": "dasda",
-      "id": 6
-    },
-    {
-      "name": "Test recipe",
-      "author": "Ilya Ponomarenko",
-      "country": "Fiji",
-      "flag": "https://flagcdn.com/fj.svg",
-      "description": "dad",
-      "image": "https://images.unsplash.com/photo-1673181914844-d255f8d4eb8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80d",
-      "ingredients": [
-        {
-          "ingredient": "sad",
-          "quantity": "dad"
-        }
-      ],
-      "directions": "dasda",
-      "id": 7
-    },
-    {
-      "name": "Test recipe",
-      "author": "Ilya Ponomarenko",
-      "country": "Dominican Republic",
-      "flag": "https://flagcdn.com/do.svg",
-      "description": "asda",
-      "image": "https://images.unsplash.com/photo-1673181914844-d255f8d4eb8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-      "ingredients": [
-        {
-          "ingredient": "das",
-          "quantity": "da"
-        }
-      ],
-      "directions": "da",
-      "id": 8
-    },
-    {
-      "name": "Test recipe",
-      "author": "Ilya Ponomarenko",
-      "country": "Micronesia",
-      "flag": "https://flagcdn.com/fm.svg",
-      "description": "dsadas",
-      "image": "https://images.unsplash.com/photo-1673181914844-d255f8d4eb8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-      "ingredients": [
-        {
-          "ingredient": "dsa",
-          "quantity": "dsa"
-        }
-      ],
-      "directions": "dsadas",
-      "id": 9
     }
   ]
 }

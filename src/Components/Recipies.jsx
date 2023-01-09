@@ -33,6 +33,7 @@ const Recipies = () => {
           <input type="text" name="value" onChange={searchInputHandler} />
         </label>
       </div>
+      <h2 className="title">Our recipies</h2>
       <div className="recipies-collection">
         {searchHandler.map((recipe) => {
           return (
