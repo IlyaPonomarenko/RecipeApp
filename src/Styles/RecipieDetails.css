@@ -8,7 +8,8 @@
   display: flex;
   justify-content: center;
   flex-direction: row;
-  width: 70%;
+  width: 75%;
+  margin: 1em;
 }
 .details-images {
   position: relative;
@@ -16,7 +17,8 @@
   justify-content: center;
 }
 .details-image {
-  max-width: 60%;
+  min-width: 200px;
+  height: 400px;
 }
 .details-flag {
   max-width: 100%;
@@ -28,6 +30,7 @@
 }
 .details-label {
   font-weight: bolder;
+  display: block ruby;
 }
 .details-ul {
   list-style: none;
@@ -36,6 +39,6 @@
   justify-content: center;
 }
 .details-instructions {
-  margin-left: 12em;
+  margin-left: 15em;
   margin-right: 30%;
 }
