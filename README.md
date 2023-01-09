@@ -15,3 +15,11 @@ This app is a collection of recipies from all over the world. You can your favor
 
 ## Preview of the app
 
+- Home page
+![Preview of Home page](./src/Assets/homepage.png)
+- All recipies
+![Preview of all recipies](./src/Assets/allrecipies.png)
+- Single recipie
+![Preview of a single recipie](./src/Assets/single.png)
+- Add new recipie
+![Preview of add new recipie](./src/Assets/addnew.png)
