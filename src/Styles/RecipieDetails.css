@@ -15,6 +15,7 @@
   position: relative;
   display: flex;
   justify-content: center;
+  max-width: 50%;
 }
 .details-image {
   min-width: 200px;
@@ -26,7 +27,7 @@
   margin-left: 1.5em;
 }
 .details-additional-info {
-  margin-left: 1em;
+  margin-left: 1.5em;
 }
 .details-label {
   font-weight: bolder;

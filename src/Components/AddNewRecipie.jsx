@@ -80,12 +80,12 @@ const AddNewRecipie = () => {
   return (
     <div className="new-recipe-wrapper">
       <h2 className="h2-new-recipe">Add a new recipe</h2>
-      <form>
+      <form onSubmit={postHandler}>
         <label className="form-input-title">
           {" "}
           Name:
           <input
-            required
+            required="true"
             type="text"
             name="name"
             id="name"
@@ -153,6 +153,7 @@ const AddNewRecipie = () => {
                   <label className="form-input-title">
                     Ingredient:
                     <input
+                      required
                       type="text"
                       name="ingredient"
                       id="ingredient"
@@ -164,6 +165,7 @@ const AddNewRecipie = () => {
                   <label className="form-input-title">
                     Quantity:
                     <input
+                      required
                       type="text"
                       name="quantity"
                       id="quantity"
@@ -191,7 +193,6 @@ const AddNewRecipie = () => {
           className="post-btn"
           type="submit"
           id="submit"
-          onClick={postHandler}
         >
           Post recipe
         </button>
