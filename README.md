@@ -1,10 +1,10 @@
 # TasteIt app 
 
-This projet was created as a part of REACT22s programme at Business College of Helsinki
+This projet was created as a part of REACT22s programme at Business College of Helsinki.
 
 ## What is it about?
 
-This app is a collection of recipies from all over the world. You can your favorite recipe too!
+This app is a collection of recipies from all over the world. You can add your favorite recipe too!
 
 ## How to run
 

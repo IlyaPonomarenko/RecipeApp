@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import About from "./Components/About";
 import AddNewRecipie from "./Components/AddNewRecipie";
 import Home from "./Components/Home";
 import RecipieDetails from "./Components/RecipieDetails";
@@ -16,9 +15,7 @@ function App() {
         <Route index element={<Home/>}/>
         <Route path="allrecipies" element={<Recipies/>}/>
         <Route path="allrecipies/:id" element={<RecipieDetails/>}/>
-        <Route path="addnewrecipe" element={<AddNewRecipie/>}/>
-        <Route path="about" element={<About/>}/>
-        
+        <Route path="addnewrecipe" element={<AddNewRecipie/>}/>        
       </Route>
     </Routes>
   </BrowserRouter>
