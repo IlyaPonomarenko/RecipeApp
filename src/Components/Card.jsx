@@ -15,7 +15,7 @@ const Card = ({ id, name, flag, image }) => {
         <img className="recipe-flag" src={flag} alt="country.svg" />
       </div>
 
-      <div>
+      <div className="recipie-link-todetails">
         <Link to={`${id}`}>See more</Link>
       </div>
     </div>

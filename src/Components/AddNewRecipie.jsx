@@ -74,13 +74,13 @@ const AddNewRecipie = () => {
         ingredients: recipeData.ingredients,
         directions: recipeData.directions,
       })
-      .catch((error) => console.log(error));
+      .then((res) => window.location.reload());
   };
 
   return (
     <div className="new-recipe-wrapper">
       <h2 className="h2-new-recipe">Add a new recipe</h2>
-      <form >
+      <form>
         <label className="form-input-title">
           {" "}
           Name:
