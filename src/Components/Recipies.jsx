@@ -28,7 +28,6 @@ const Recipies = () => {
     <div className="recipies-wrapper">
       <div className="recipies-search">
         <label>
-          {" "}
           Search for recipe:
           <input type="text" name="value" onChange={searchInputHandler} />
         </label>

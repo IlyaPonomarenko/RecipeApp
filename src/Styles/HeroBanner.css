@@ -16,6 +16,7 @@
 }
 .Banner-header {
   position: absolute;
+  z-index: 1;
   top: 21%;
   left: 21%;
 }

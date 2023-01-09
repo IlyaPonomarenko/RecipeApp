@@ -75,7 +75,7 @@ const AddNewRecipie = () => {
         ingredients: recipeData.ingredients,
         directions: recipeData.directions,
       })
-      .then((res) => window.location.reload());
+      .then(() => window.location.reload());
   };
 
   return (
@@ -83,7 +83,6 @@ const AddNewRecipie = () => {
       <h2 className="h2-new-recipe">Add a new recipe</h2>
       <form onSubmit={postHandler}>
         <label className="form-input-title">
-          {" "}
           Name:
           <input
             required
@@ -94,7 +93,6 @@ const AddNewRecipie = () => {
         </label>
 
         <label className="form-input-title">
-          {" "}
           Author:
           <input
             required
@@ -105,7 +103,6 @@ const AddNewRecipie = () => {
         </label>
 
         <label className="form-input-title">
-          {" "}
           Recipe is from:
           <select
             required
