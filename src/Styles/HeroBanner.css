@@ -26,7 +26,4 @@
   padding: 5px;
   color: #76f9ff;
 }
-.Banner-button:hover {
-  text-shadow: 0 0 35px #76f9ff;
-  transition: all 0.5s ease-in-out;
-}
+

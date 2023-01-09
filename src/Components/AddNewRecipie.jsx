@@ -31,10 +31,6 @@ const AddNewRecipie = () => {
     })
   );
 
-  const inputDataHandler = (e) => {
-    setRecipeData({ ...recipeData, [e.target.name]: e.target.value });
-  };
-
   const countryPickHandler = (e) => {
     axios
       .get(`https://restcountries.com/v3.1/name/${e.target.value}`)
@@ -61,6 +57,11 @@ const AddNewRecipie = () => {
     setAddedIngredients(data);
     setRecipeData({ ...recipeData, ingredients: addedIngredients });
   };
+
+  const inputDataHandler = (e) => {
+    setRecipeData({ ...recipeData, [e.target.name]: e.target.value });
+  };
+
   const postHandler = (e) => {
     e.preventDefault();
     axios
@@ -85,10 +86,9 @@ const AddNewRecipie = () => {
           {" "}
           Name:
           <input
-            required="true"
+            required
             type="text"
             name="name"
-            id="name"
             onChange={inputDataHandler}
           />
         </label>
@@ -100,7 +100,6 @@ const AddNewRecipie = () => {
             required
             type="text"
             name="author"
-            id="author"
             onChange={inputDataHandler}
           />
         </label>
@@ -111,7 +110,6 @@ const AddNewRecipie = () => {
           <select
             required
             name="country"
-            id="country"
             onChange={countryPickHandler}
           >
             {countryNames[0].map((country) => {
@@ -129,7 +127,6 @@ const AddNewRecipie = () => {
           <textarea
             required
             name="description"
-            id="description"
             onChange={inputDataHandler}
           ></textarea>
         </label>
@@ -140,7 +137,6 @@ const AddNewRecipie = () => {
             required
             type="url"
             name="image"
-            id="image"
             onChange={inputDataHandler}
           />
         </label>
@@ -156,7 +152,6 @@ const AddNewRecipie = () => {
                       required
                       type="text"
                       name="ingredient"
-                      id="ingredient"
                       onChange={(e) => newIngredientsInputHandler(e, index)}
                     />
                   </label>
@@ -168,7 +163,6 @@ const AddNewRecipie = () => {
                       required
                       type="text"
                       name="quantity"
-                      id="quantity"
                       onChange={(e) => newIngredientsInputHandler(e, index)}
                     />
                   </label>
@@ -185,15 +179,10 @@ const AddNewRecipie = () => {
           <textarea
             required
             name="directions"
-            id="directions"
             onChange={inputDataHandler}
           ></textarea>
         </label>
-        <button
-          className="post-btn"
-          type="submit"
-          id="submit"
-        >
+        <button className="post-btn" type="submit" id="submit">
           Post recipe
         </button>
       </form>
