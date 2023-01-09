@@ -2,13 +2,6 @@
 li {
   list-style-type: none;
   display: inline-block;
-  margin: 0;
-}
-.navbar ul li a {
-  display: inline-flex;
-  justify-content: center;
-  padding: 1.5em;
-  text-decoration: none;
 }
 .navbar ul li a:hover {
   background-color: #00ADb5;

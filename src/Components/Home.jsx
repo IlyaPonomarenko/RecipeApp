@@ -4,7 +4,7 @@ import "../Styles/Home.css"
 import { Link } from "react-router-dom";
 const Home = () => {
   return (
-    <div className="Home-wrapper">
+    <div>
       <HeroBanner />
       <div className="Home-header">
         <h2>Looking for new recipies?</h2>
