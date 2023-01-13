@@ -1,7 +1,6 @@
-import React from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import { useState, useEffect } from "react";
+import { useState, useEffect, React } from "react";
 import "../Styles/RecipieDetails.css";
 
 const RecipieDetails = () => {

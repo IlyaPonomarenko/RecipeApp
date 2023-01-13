@@ -1,6 +1,5 @@
-import React from "react";
 import axios from "axios";
-import { useState, useEffect } from "react";
+import { useState, useEffect, React } from "react";
 import "../Styles/AddNewRecipie.css";
 const AddNewRecipie = () => {
   const [recipeData, setRecipeData] = useState({
@@ -23,7 +22,6 @@ const AddNewRecipie = () => {
       setCountries(res.data);
     });
   }, []);
-
   let countryNames = [];
   countryNames.push(
     countriesData.map((country) => {
