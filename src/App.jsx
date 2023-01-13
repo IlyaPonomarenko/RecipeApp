@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./App.css";
 import AddNewRecipie from "./Components/AddNewRecipie";
 import Home from "./Components/Home";
 import RecipieDetails from "./Components/RecipieDetails";
@@ -20,7 +19,6 @@ function App() {
     </Routes>
   </BrowserRouter>
   );
- 
 }
 
 export default App;

@@ -11,7 +11,7 @@ const RecipieDetails = () => {
     axios.get(`http://localhost:3000/recipes/${id}`).then((res) => {
       setRecipieDetails(res.data);
     });
-  }, []);
+  }, [id]);
 
   return (
     <div className="details-wrapper">
@@ -34,6 +34,10 @@ const RecipieDetails = () => {
         <div className="details-additional-info">
           <h2 className="details-label">Author - {recipeDetails.author}</h2>
           <p>{recipeDetails.description}</p>
+          <div>
+          <h2 className="details-label">Recipie insctructions</h2>
+          <p>{recipeDetails.directions}</p>
+        </div>
         </div>
       </div>
       <div className="details-instructions">
@@ -46,10 +50,6 @@ const RecipieDetails = () => {
               </li>
             ))}
           </ul>
-        </div>
-        <div>
-          <h2 className="details-label">Recipie insctructions</h2>
-          <p>{recipeDetails.directions}</p>
         </div>
       </div>
     </div>
