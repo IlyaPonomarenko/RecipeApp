@@ -20,6 +20,7 @@
 .details-image {
   min-width: 200px;
   height: 400px;
+  object-fit: cover;
 }
 .details-flag {
   max-width: 100%;
