@@ -4,7 +4,7 @@ import "../Styles/Card.css";
 
 const Card = ({ id, name, flag, image }) => {
   return (
-    <div className="recipe-card">
+    <div data-testid="test" className="recipe-card">
       <div className="recipie-img-wrapper">
         <img className="recipe-img" src={image} alt="recipe.png" />
       </div>
