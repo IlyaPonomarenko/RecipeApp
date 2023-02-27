@@ -139,7 +139,7 @@ const AddNewRecipie = () => {
           Ingredients:
           {addedIngredients.map((ingredient, index) => {
             return (
-              <div className="ingredients-field" key={index}>
+              <div className="ingredients-field" key={ingredient}>
                 <div className="one-input">
                   <label className="form-input-title">
                     Ingredient:
