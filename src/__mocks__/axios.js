@@ -2,7 +2,7 @@ const mockResponce = {
   data: {
     id: 1,
     name: "Chicken Parmesan",
-    author: "Ilya",
+    author: "test",
     country: "Italy",
     flag: "https://italy.svg",
     description: "A classic Italian dish.",
