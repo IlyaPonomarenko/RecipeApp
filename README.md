@@ -1,3 +1,6 @@
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=IlyaPonomarenko_REACT22S_RecipeApp&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=IlyaPonomarenko_REACT22S_RecipeApp)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=IlyaPonomarenko_REACT22S_RecipeApp&metric=bugs)](https://sonarcloud.io/summary/new_code?id=IlyaPonomarenko_REACT22S_RecipeApp)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=IlyaPonomarenko_REACT22S_RecipeApp&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=IlyaPonomarenko_REACT22S_RecipeApp)
 # TasteIt app 
 
 This projet was created as a part of REACT22s programme at Business College of Helsinki.
@@ -25,5 +28,4 @@ This app is a collection of recipies from all over the world. You can add your f
 ![Preview of add new recipie](./src/Assets/addnew.png)
 
 
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=IlyaPonomarenko_REACT22S_RecipeApp&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=IlyaPonomarenko_REACT22S_RecipeApp)
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=IlyaPonomarenko_REACT22S_RecipeApp&metric=bugs)](https://sonarcloud.io/summary/new_code?id=IlyaPonomarenko_REACT22S_RecipeApp)
+
