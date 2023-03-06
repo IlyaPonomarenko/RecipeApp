@@ -23,3 +23,7 @@ This app is a collection of recipies from all over the world. You can add your f
 ![Preview of a single recipie](./src/Assets/single.png)
 - Add new recipie
 ![Preview of add new recipie](./src/Assets/addnew.png)
+
+
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=IlyaPonomarenko_REACT22S_RecipeApp&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=IlyaPonomarenko_REACT22S_RecipeApp)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=IlyaPonomarenko_REACT22S_RecipeApp&metric=bugs)](https://sonarcloud.io/summary/new_code?id=IlyaPonomarenko_REACT22S_RecipeApp)
