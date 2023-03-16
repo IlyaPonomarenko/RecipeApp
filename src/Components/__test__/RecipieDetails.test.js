@@ -1,7 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import RecipieDetails from "../RecipieDetails";
-import Recipies from "../Recipies"
 
 describe("1 - RecipieDetails - Check if data is mocked correctly", () =>{
     test("renders data when API call succeeds", async () => {
